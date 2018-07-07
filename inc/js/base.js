@@ -51,61 +51,11 @@ footerXhr.onreadystatechange=function(){
 var nowPath=location.pathname.split('/').pop();
 
 function menuHighlight(){
-	var nowActived=document.querySelector('#menu .list-wrapper > li.active');
-	var menuList=document.querySelectorAll('#menu .list-wrapper > li')
-
-	if(nowPath=="" || nowPath=="index.html"){
-		return;
-
-	}else if(nowPath=='products-1.html' || nowPath=='products-2.html' || nowPath=='products-3.html'){
-		nowActived.classList.remove('active');
-		menuList[1].classList.add('active');
-
-	}else if(nowPath=='product.html'){
-		nowActived.classList.remove('active');
-		menuList[2].classList.add('active');
-
-	}else if(nowPath=='factory.html' || nowPath=='quality.html' || nowPath=='process.html'){
-		nowActived.classList.remove('active');
-		menuList[3].classList.add('active');
-
-	}else if(nowPath=='profile.html' || nowPath=='message.html' || nowPath=='recruit.html'){
-		nowActived.classList.remove('active');
-		menuList[4].classList.add('active');
-	}else if(nowPath=='contact.html'){
-		nowActived.classList.remove('active');
-		menuList[5].classList.add('active');
-	}else {
-		nowActived.classList.remove('active');
-
-	}
+	document.querySelector('a[href*="' + nowPath + '"]').closest('li').classList.add('active');
 }
 
 // menu dropdown
 function menuDropdown(){
-
-	// PC menu dropdown
-	if(window.innerWidth > 769){
-
-		var menuChildHeads=document.querySelectorAll('.child-head span');
-
-		for(i=0;i<menuChildHeads.length;i++){
-			menuChildHeads[i].addEventListener('click', function(){
-				var nowActived=document.querySelector('.child-menu.active');
-
-				if(nowActived){
-					nowActived.classList.remove("active");
-				}
-
-				if(nowActived==this.nextElementSibling){
-					this.nextElementSibling.classList.remove("active");
-				}else{
-					this.nextElementSibling.classList.add("active");
-				}
-			})
-		}
-
-	}else{
 
 		//mobile menu dropdown
 		document.body.addEventListener('touchstart', function(event){
@@ -125,5 +75,45 @@ function menuDropdown(){
 			})
 		}
 
+}
+
+
+if(nowPath=='about.html'){
+	function initMap() {
+		//tokyo office
+		var tokyo = {lat: 35.5558912, lng: 139.7267339};
+		var map = new google.maps.Map(document.getElementById('officeMap'), {
+			zoom: 15,
+			center: tokyo
+		});
+		var marker = new google.maps.Marker({
+			position: tokyo,
+			map: map
+		});
+
+	    //yaita factory
+	    var yaita = {lat: 36.7966532, lng: 139.8886486};
+	    var map = new google.maps.Map(document.getElementById('factoryMap'), {
+	    	zoom: 12,
+	    	center: yaita
+	    });
+	    var marker = new google.maps.Marker({
+	    	position: yaita,
+	    	map: map
+	    });
 	}
+}else if(nowPath=='thailand.html'){
+	function initMap() {
+		//thailand factory
+	    var thailand = {lat: 13.5689462, lng: 100.6816627};
+	    var map = new google.maps.Map(document.getElementById('thailandMap'), {
+	    	zoom: 12,
+	    	center: thailand
+	    });
+	    var marker = new google.maps.Marker({
+	    	position: thailand,
+	    	map: map
+	    });
+	}
+
 }

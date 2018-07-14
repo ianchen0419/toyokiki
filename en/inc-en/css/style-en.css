@@ -60,7 +60,7 @@ span {
 .logo-area {
 	display: inline-block;
 	vertical-align: middle;
-	width: 50%;
+	width: 60%;
 }
 
 .logo-area a {
@@ -83,17 +83,9 @@ span {
 .tel-area {
 	display: inline-block;
 	vertical-align: middle;
-	width: 30%;
+	width: 40%;
 }
 
-.sitemap-link-area {
-	display: inline-block;
-	vertical-align: middle;
-	width: 15%;
-}
-.sitemap-link-area i {
-	margin-right: 5px;
-}
 
 #menu {
 	height: 30px;
@@ -142,38 +134,6 @@ span {
 .list-wrapper li.active {
 	background-color: #7bc1ca;
 }
-
-.child-menu {
-	transition-duration: 0.5s;
-	padding-left: 0;
-	background-color: #fff;
-	max-height: 0;
-	overflow: hidden;
-}
-
-.child-menu li {
-	list-style: none;
-	text-align: left;
-	padding: 4px 15px;
-	color: #008db1;
-	transition-duration: 0.5s;
-	border-bottom: 1px solid #7bc1ca;
-	border-right: 1px solid #7bc1ca;
-	border-left: 1px solid #7bc1ca;
-	text-align: center;
-}
-
-.child-head:after {
-    content: '\f0d7';
-    margin-left: 15px;
-    font-family: FontAwesome;
-    position: absolute;
-    top: 7px;
-    right: 20px;
-    float: right;
-    color: #fff;
-}
-
 
 #visual {
 	position: relative;
@@ -255,6 +215,7 @@ span {
 	border: none;
 	border-radius: 4px;
 	padding: 10px 100px;
+	cursor: pointer;
 }
 
 .area-tab {
@@ -268,6 +229,7 @@ span {
 	-webkit-transition-duration: 0.5s;
 	-o-transition-duration: 0.5s;
 	transition-duration: 0.5s;
+	cursor: pointer;
 }
 
 .area-tab.active {
@@ -376,6 +338,19 @@ span {
 	text-align-last: left;
 }
 
+.address-info {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 10px; 
+}
+
+.address-item {
+	color: #fff;
+	font-size: 10pt;
+	margin-bottom: 5px;
+}
+
+
 .child-list:before {
 	content: "-";
 	margin: 0 5px 0 5px;
@@ -430,6 +405,10 @@ article {
 
 .factory-image-area {
 	text-align: center;
+}
+
+.factory-image-area figure {
+	display: inline-block;
 }
 
 .factory-image-area img {

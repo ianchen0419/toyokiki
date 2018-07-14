@@ -263,6 +263,7 @@ span {
 	border: none;
 	border-radius: 4px;
 	padding: 10px 100px;
+	cursor: pointer;
 }
 
 .product-type-area {
@@ -396,6 +397,10 @@ article {
 
 .factory-image-area {
 	text-align: center;
+}
+
+.factory-image-area figure {
+	display: inline-block;
 }
 
 .factory-image-area img {

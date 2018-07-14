@@ -128,7 +128,6 @@ if(nowPath=='about.html'){
 function tabPanels(th){
 	document.querySelector('.area-panel.active.show').classList.remove('show','active');
 	document.querySelector('.area-tab.active').classList.remove('active');
-	document.querySelector('.tab-img.active.show').classList.remove('show','active');
 	
 	th.classList.add('active');
 
@@ -138,10 +137,16 @@ function tabPanels(th){
 		panelTarget.classList.add('show');
 	}, 100)	
 
+
 	const imgTarget=window[th.dataset.img];
-	imgTarget.classList.add('active');
-	window.setTimeout(function(){
-		imgTarget.classList.add('show');
-	}, 100)		
+	if(imgTarget){
+		document.querySelector('.tab-img.active.show').classList.remove('show','active');
+
+		imgTarget.classList.add('active');
+		window.setTimeout(function(){
+			imgTarget.classList.add('show');
+		}, 100)	
+	}
+		
 }
 

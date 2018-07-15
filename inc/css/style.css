@@ -256,6 +256,10 @@ span {
 	margin: 40px 0;
 }
 
+.btn-area a {
+	display: inline-block;
+}
+
 .advantage-btn {
 	outline: none;
 	background-color: #008db1;

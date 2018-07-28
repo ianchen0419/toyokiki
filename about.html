@@ -16,7 +16,10 @@
 	<nav id="menu"></nav>
 
 	<section id="visual">
-		<img src="inc/img/about/about.png" alt="会社概要" width="100%" />
+		<picture> 
+			<source media="(max-width: 480px)" srcset="inc/img/about/about_mobile.png" /> 
+			<img src="inc/img/about/about.png" alt="会社概要" width="100%" /> 
+		</picture>
 		<h3 class="visual-title">鉄加工のことならおまかせください</h3>
 	</section>
 
@@ -26,7 +29,7 @@
 				<span>会社概要</span>
 			</h2>
 
-			<table width="90%" class="about-table">
+			<table class="about-table">
 				<tbody>
 					<tr>
 						<th width="20%">社名</th>
@@ -196,6 +199,6 @@
 	<footer id="footer"></footer>
 </body>
 <script src="inc/js/base.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm2EfNKgkxCRJRNikdhkvVLc1UL8EH8WI&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHREQgV1IXGfh9-ZkkwricG1ZhNKy-MRQ&callback=initMap"
 async defer></script>
 </html>

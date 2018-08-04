@@ -876,6 +876,7 @@ article {
 
 	.image-area {
 		height: calc(100vh - 50px);
+		background-size: auto;
 	}
 
 	.title {
@@ -1074,6 +1075,18 @@ article {
 
 	.flexbox figure {
 		margin: 20px 0;
+	}
+
+	.m-hide {
+		display: none;
+	}
+
+	.thailand-image-area img {
+		width: 100%;
+	}
+
+	.thailand-image-area figure {
+	    width: 100%;
 	}
 
 }

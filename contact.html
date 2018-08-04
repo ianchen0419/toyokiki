@@ -24,93 +24,98 @@
 
 			<article>本社TEL：03-3742-4831 / 矢板工場TEL：0287-44-2155<br>info@toyokiki.co.jp<br>東陽機器工業株式会社へのお問い合わせは、下記フォームよりお気軽にご連絡ください。</article>
 
-			<table class="contact-table">
-				<tbody>
-					<tr>
-						<th width="35%">貴社名</th>
-						<td width="65%">
-							<input type="text" name="your_company" />
-						</td>
-					</tr>
-					<tr>
-						<th>部署名</th>
-						<td>
-							<input type="text" name="your_division" />
-						</td>
-					</tr>
-					<tr>
-						<th>
-							<span>お名前</span>
-							<span class="badge">必須</span>
-						</th>
-						<td>
-							<input type="text" name="your_name" required="1" />
-						</td>
-					</tr>
-					<tr>
-						<th>
-							<span>ふりがな</span>
-							<span class="badge">必須</span>
-						</th>
-						<td>
-							<input type="text" name="your_furigana" required="1" />
-						</td>
-					</tr>
-					<tr>
-						<th>
-							<span>メールアドレス</span>
-							<span class="badge">必須</span>
-						</th>
-						<td>
-							<input type="email" name="your_mail" required="1" />
-						</td>
-					</tr>
-					<tr>
-						<th>
-							<span>メールアドレス（確認用）</span>
-							<span class="badge">必須</span>
-						</th>
-						<td>
-							<input type="email" name="your_mail(confirm)" required="1" />
-						</td>
-					</tr>
-					<tr>
-						<th>
-							<span>電話番号</span>
-							<span class="badge">必須</span>
-						</th>
-						<td>
-							<input type="tel" name="your_phone" required="1" />
-						</td>
-					</tr>
-					<tr>
-						<th>お問い合わせ種類</th>
-						<td>
-							<label class="radio-label">
-								<input type="radio" name="your_type" value="soudan" />
-								<div class="radio-widget"></div>
-								<span>ご相談</span>
-							</label>
-							<label class="radio-label">
-								<input type="radio" name="your_type" value="saiyou" />
-								<div class="radio-widget"></div>
-								<span>採用について</span>
-							</label>
-							<label class="radio-label">
-								<input type="radio" name="your_type" value="sonota" />
-								<div class="radio-widget"></div>
-								<span>その他</span>
-							</label>
-						</td>
-					</tr>
-					<tr>
-						<th>お問い合わせ内容</th>
-						<td>
-							<textarea cols="30" rows="10" name="your_message"></textarea>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+			<form action="" method="post">
+				<table class="contact-table">
+					<tbody>
+						<tr>
+							<th width="35%">貴社名</th>
+							<td width="65%">
+								<input type="text" name="your_company" />
+							</td>
+						</tr>
+						<tr>
+							<th>部署名</th>
+							<td>
+								<input type="text" name="your_division" />
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<span>お名前</span>
+								<span class="badge">必須</span>
+							</th>
+							<td>
+								<input type="text" name="your_name" required="1" />
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<span>ふりがな</span>
+								<span class="badge">必須</span>
+							</th>
+							<td>
+								<input type="text" name="your_furigana" required="1" />
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<span>メールアドレス</span>
+								<span class="badge">必須</span>
+							</th>
+							<td>
+								<input type="email" name="your_mail" required="1" />
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<span>メールアドレス（確認用）</span>
+								<span class="badge">必須</span>
+							</th>
+							<td>
+								<input type="email" name="your_mail(confirm)" required="1" />
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<span>電話番号</span>
+								<span class="badge">必須</span>
+							</th>
+							<td>
+								<input type="tel" name="your_phone" required="1" />
+							</td>
+						</tr>
+						<tr>
+							<th>お問い合わせ種類</th>
+							<td>
+								<label class="radio-label">
+									<input type="radio" name="your_type" value="soudan" />
+									<div class="radio-widget"></div>
+									<span>ご相談</span>
+								</label>
+								<label class="radio-label">
+									<input type="radio" name="your_type" value="saiyou" />
+									<div class="radio-widget"></div>
+									<span>採用について</span>
+								</label>
+								<label class="radio-label">
+									<input type="radio" name="your_type" value="sonota" />
+									<div class="radio-widget"></div>
+									<span>その他</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th>お問い合わせ内容</th>
+							<td>
+								<textarea cols="30" rows="10" name="your_message"></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn-box">
+					<input type="submit" name="your_submit">
+				</div>
+			</form>
 
 		</div>
 	</main>

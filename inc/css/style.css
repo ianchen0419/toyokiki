@@ -149,12 +149,12 @@ i {
 }
 
 .list-wrapper > li span:hover {
-    background-color: #7bc1ca;
+	background-color: #7bc1ca;
 }
 
 .child-menu li:hover {
-    background-color: rgba(0, 141, 177, 0.6);;
-    color: #fff;
+	background-color: rgba(0, 141, 177, 0.6);;
+	color: #fff;
 }
 
 .list-wrapper li.active {
@@ -186,14 +186,14 @@ i {
 }
 
 .child-head:after {
-    content: '\f0d7';
-    margin-left: 15px;
-    font-family: FontAwesome;
-    position: absolute;
-    top: 7px;
-    right: 20px;
-    float: right;
-    color: #fff;
+	content: '\f0d7';
+	margin-left: 15px;
+	font-family: FontAwesome;
+	position: absolute;
+	top: 7px;
+	right: 20px;
+	float: right;
+	color: #fff;
 }
 
 
@@ -384,9 +384,9 @@ article {
 
 .catch-copy {
 	font-weight: bold;
-    font-size: 19pt;
-    width: 640px;
-    margin: 20px auto;
+	font-size: 19pt;
+	width: 640px;
+	margin: 20px auto;
 }
 
 .step-block {
@@ -406,8 +406,8 @@ article {
 
 .step-title {
 	color: #949494;
-    font-size: 17pt;
-    padding-left: 20px;
+	font-size: 17pt;
+	padding-left: 20px;
 }
 
 .step-block p {
@@ -428,25 +428,25 @@ article {
 
 .facilities-table {
 	border-collapse: collapse;
-    border: 1px solid #949494;
-    width: 100%;
+	border: 1px solid #949494;
+	width: 100%;
 }
 
 .facilities-table th {
-    background: #f7f7f7;
-    border: 1px solid #949494;
-    font-weight: 200;
-    padding: 8px;
+	background: #f7f7f7;
+	border: 1px solid #949494;
+	font-weight: 200;
+	padding: 8px;
 }
 
 .facilities-table td {
-    border: 1px solid #949494;
-    padding: 10px;
+	border: 1px solid #949494;
+	padding: 10px;
 }
 
 .flexbox {
 	display: flex;
-    margin-top: 40px;
+	margin-top: 40px;
 }
 
 .flexbox figcaption {
@@ -455,11 +455,11 @@ article {
 
 .visual-title {
 	font-size: 24pt;
-    text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) -1px 1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px, rgba(0, 0, 0, 0.5) 1px -1px 0px;
-    color: #fff;
-    position: absolute;
-    top: 27%;
-    width: 100%;
+	text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) -1px 1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px, rgba(0, 0, 0, 0.5) 1px -1px 0px;
+	color: #fff;
+	position: absolute;
+	top: 27%;
+	width: 100%;
 }
 
 .about-table {
@@ -479,19 +479,19 @@ article {
 
 .address {
 	display: inline-block;
-    width: 28%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    vertical-align: top;
-    padding-left: 20px;	
+	width: 28%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: top;
+	padding-left: 20px;	
 }
 
 #officeMap, #factoryMap {
-    height: 250px;
-    width: 65%;
-    display: inline-block;
-    vertical-align: top;
+	height: 250px;
+	width: 65%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 #thailandMap {
@@ -521,9 +521,9 @@ article {
 
 .thailand-image-area {
 	display: flex;
-    margin-top: 40px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+	margin-top: 40px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .thailand-image-area figure {
@@ -535,59 +535,59 @@ article {
 }
 
 .contact-table {
-    border-spacing: 25px 15px;
-    max-width: 800px;
-    margin: 0 auto;
+	border-spacing: 25px 15px;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 .contact-table th {
-    text-align: left;
-    padding: 15px 12px;
-    background: #eee;
-    border-radius: 2px;
-    font-size: 10pt;
+	text-align: left;
+	padding: 15px 12px;
+	background: #eee;
+	border-radius: 2px;
+	font-size: 10pt;
 }
 
 .contact-table input {
-    width: 90%;
-    height: 30px;
-    border: 1px solid #777;
-    font-size: 13pt;
-    padding: 3px 15px;
-    border-radius: 2px;
-    outline: none;
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
+	width: 90%;
+	height: 30px;
+	border: 1px solid #777;
+	font-size: 13pt;
+	padding: 3px 15px;
+	border-radius: 2px;
+	outline: none;
+	-webkit-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
 }
 
 .contact-table .badge {
-    color: #fff;
-    background: #ff5d55;
-    padding: 2px 7px;
-    border-radius: 3px;
-    font-size: 8pt;
-    float: right;
+	color: #fff;
+	background: #ff5d55;
+	padding: 2px 7px;
+	border-radius: 3px;
+	font-size: 8pt;
+	float: right;
 }
 
 .radio-label input[type="radio"] {
-    display: none;
+	display: none;
 }
 
 .radio-widget {
 	vertical-align: middle;
 	display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #ababab;
-    border-radius: 100%;
-    position: relative;
-    margin-right: 5px;
-    background: radial-gradient(#ddd 20%, #fff 25%);
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ababab;
+	border-radius: 100%;
+	position: relative;
+	margin-right: 5px;
+	background: radial-gradient(#ddd 20%, #fff 25%);
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: pointer;
 }
 
 .radio-label input[type="radio"]:checked + .radio-widget {
@@ -596,81 +596,85 @@ article {
 }
 
 .radio-label span {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 .contact-table textarea {
-    width: 90%;
-    border: 1px solid #777;
-    font-size: 13pt;
-    padding: 10px 15px;
-    border-radius: 2px;
-    outline: none;
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
+	width: 90%;
+	border: 1px solid #777;
+	font-size: 13pt;
+	padding: 10px 15px;
+	border-radius: 2px;
+	outline: none;
+	-webkit-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.btn-box {
+	text-align: center;
 }
 
 .btn-box input {
-    border: 1px solid #4c7a34;
-    background: #cbe8ba;
-    padding: 6px 120px;
-    border-radius: 5px;
-    font-size: 13pt;
-    cursor: pointer;
-    outline: none;
-    transition-duration: 0.5s;
+	border: 1px solid #4c7a34;
+	background: #cbe8ba;
+	padding: 6px 120px;
+	border-radius: 5px;
+	font-size: 13pt;
+	cursor: pointer;
+	outline: none;
+	transition-duration: 0.5s;
 }
 .radio-label {
-    margin: 0px 5px;
-    letter-spacing: 0;
+	margin: 0px 5px;
+	letter-spacing: 0;
 }
 
 .block-title {
-    color: #008db1;
-    background: #d4e3fc;
-    padding: 14px;
-    text-align: center;
-    font-size: 19pt;
-    width: 500px;
-    margin: 40px auto;
+	color: #008db1;
+	background: #d4e3fc;
+	padding: 14px;
+	text-align: center;
+	font-size: 19pt;
+	width: 500px;
+	margin: 40px auto;
 }
 
 .sitemap-list {
-    padding: 0;
-    margin: 0 auto;
-    font-size: 0;
-    width: 800px;
-    display: flex;
-    flex-flow: column wrap;
-    max-height: 400px;
+	padding: 0;
+	margin: 0 auto;
+	font-size: 0;
+	width: 800px;
+	display: flex;
+	flex-flow: column wrap;
+	max-height: 400px;
 }
 
 .sitemap-list > li {
-    width: 50%;
-    font-size: 14pt;
-    margin-bottom: 15px;
-    list-style: none;
-    min-height: 40px;
+	width: 50%;
+	font-size: 14pt;
+	margin-bottom: 15px;
+	list-style: none;
+	min-height: 40px;
 }
 
 .sitemap-list i {
-    color: #008db1;
+	color: #008db1;
 }
 
 .sitemap-detail-list {
-    margin-top: 10px;
-    padding: 0;
+	margin-top: 10px;
+	padding: 0;
 }
 
 .sitemap-detail-list li {
-    list-style: none;
+	list-style: none;
 }
 
 @media (max-width: 768px) {
 	body {
-	    width: 100vw;
-	    min-width: unset;
+		width: 100vw;
+		min-width: unset;
 	}
 	
 	#header {
@@ -699,25 +703,25 @@ article {
 	}
 
 	#menu .wrapper-size {
-	    display: none;
+		display: none;
 	}
 
 	body.mobile-menu-opened {
-	    overflow: hidden;
-	    position: fixed;
-	    cursor: pointer;
+		overflow: hidden;
+		position: fixed;
+		cursor: pointer;
 	}
 
 	body.mobile-menu-opened:after {
-	    content: '';
-	    width: 100vw;
-	    height: 100vh;
-	    display: block;
-	    position: fixed;
-	    top: 0;
-	    background: #fff;
-	    opacity: 0.6;
-	    cursor: pointer;
+		content: '';
+		width: 100vw;
+		height: 100vh;
+		display: block;
+		position: fixed;
+		top: 0;
+		background: #fff;
+		opacity: 0.6;
+		cursor: pointer;
 	}
 
 	body.mobile-menu-opened #mobileMenu {
@@ -727,19 +731,19 @@ article {
 	#mobileMenu {
 		width: 0;
 		display: block;
-	    background: #f1f6fe;
-	    height: 100vh;
-	    position: absolute;
-	    top: -50px;
-	    right: 0;
-	    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
-	    -webkit-transition-duration: 0.3s;
-	    -o-transition-duration: 0.3s;
-	    transition-duration: 0.3s;
-	    overflow-y: scroll;
-	    padding-bottom: 100px;
-	    box-sizing: border-box;
-	    text-align: left;
+		background: #f1f6fe;
+		height: 100vh;
+		position: absolute;
+		top: -50px;
+		right: 0;
+		box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+		-webkit-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		overflow-y: scroll;
+		padding-bottom: 100px;
+		box-sizing: border-box;
+		text-align: left;
 	}
 
 	.mobile-list {
@@ -754,7 +758,7 @@ article {
 
 	.mobile-list a {
 		width: 100%;
-    		box-sizing: border-box;
+		box-sizing: border-box;
 		height: 100%;
 		padding: 8px 20px;
 		display: inline-block;
@@ -838,7 +842,7 @@ article {
 
 	.mobile-anchor-area {
 		margin-left: 20px;
-    	margin-bottom: 20px;
+		margin-bottom: 20px;
 	}
 
 	.mobile-anchor-item, .mobile-anchor-item i {
@@ -848,15 +852,15 @@ article {
 
 	.mobile-menu-bar {
 		display: inline-block;
-	    text-align: right;
-	    width: 20%;
-	    vertical-align: middle;
+		text-align: right;
+		width: 20%;
+		vertical-align: middle;
 	}
 
 	.mobile-menu-bar i {
 		font-size: 20pt;
-	    color: #7bc1ca;
-	    text-shadow: 0px 0px 10px #d4e3fc85;
+		color: #7bc1ca;
+		text-shadow: 0px 0px 10px #d4e3fc85;
 	}
 
 	.text-area {
@@ -866,12 +870,12 @@ article {
 
 	.text-area h1 {
 		font-size: 17pt;
-    	margin: 0;
+		margin: 0;
 	}
 
 	.text-area h2 {
 		font-size: 9pt;
-    	display: inline-block;
+		display: inline-block;
 	}
 
 	.image-area {
@@ -882,24 +886,24 @@ article {
 	.title {
 		width: 100%;
 		margin: 40px 0 20px 0;
-    	padding-bottom: 10px;
+		padding-bottom: 10px;
 	}
 
 	.title span {
 		border: none;
 		padding: 0;
 		line-height: 1.5;
-    	font-size: 14pt;
+		font-size: 14pt;
 	}
 
 	.mobile-tel-area {
 		margin-left: 20px;
-	    color: #008db1;
-	    display: inline-block;
-	    border: 2px solid;
-	    border-radius: 6px;
-	    padding: 10px;
-	    box-sizing: border-box;
+		color: #008db1;
+		display: inline-block;
+		border: 2px solid;
+		border-radius: 6px;
+		padding: 10px;
+		box-sizing: border-box;
 	}
 
 	.advantage-item {
@@ -912,7 +916,7 @@ article {
 	}
 
 	.advantage-item p {
-	    margin: 0px 20px 20px 20px;
+		margin: 0px 20px 20px 20px;
 	}
 
 	.btn-area {
@@ -935,7 +939,7 @@ article {
 	}
 
 	.product-type-area {
-	    flex-flow: column;
+		flex-flow: column;
 	}
 
 	.tech-area {
@@ -951,15 +955,15 @@ article {
 	}
 
 	.data-area {
-	    flex-flow: column;
-	    margin-top: 0;
+		flex-flow: column;
+		margin-top: 0;
 	}
 
 	.data-item {
 		padding: 20px 0;
-	    width: 80%;
-	    text-align: left;
-	    margin: 0 auto;
+		width: 80%;
+		text-align: left;
+		margin: 0 auto;
 	}
 
 	.sitemap-area {
@@ -982,7 +986,7 @@ article {
 
 	.catch-copy {
 		font-size: 13pt;
-    	width: auto;
+		width: auto;
 	}
 
 	.step-block img,.step-content {
@@ -990,8 +994,8 @@ article {
 	}
 
 	.step-block {
-	    margin: 40px 0;
-	    border-bottom: 1px solid #eee;
+		margin: 40px 0;
+		border-bottom: 1px solid #eee;
 	}
 
 	.step-block:last-child {
@@ -1036,11 +1040,11 @@ article {
 
 	.visual-title {
 		font-size: 14pt;
-	    width: 80%;
-	    left: 50%;
-	    top: 50%;
-	    transform: translateY(-50%) translateX(-50%);
-	    margin: 0;
+		width: 80%;
+		left: 50%;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		margin: 0;
 	}
 
 	.about-table {
@@ -1077,7 +1081,6 @@ article {
 		margin: 20px 0;
 	}
 
-<<<<<<< HEAD
 	.m-hide {
 		display: none;
 	}
@@ -1087,8 +1090,9 @@ article {
 	}
 
 	.thailand-image-area figure {
-	    width: 100%;
-=======
+		width: 100%;
+	}
+
 	.contact-table,.contact-table tbody,.contact-table tr,.contact-table td,.contact-table th {
 		display: block;
 	}
@@ -1129,7 +1133,7 @@ article {
 	}
 
 	.radio-label span {
-	    vertical-align: middle;
+		vertical-align: middle;
 	}
 
 	.contact-table textarea {
@@ -1147,7 +1151,7 @@ article {
 		-moz-appearance: none;
 		appearance: none; 
 		padding: 6px 100px;
->>>>>>> 31e6dfbdf253c6c631668ee75f6897c85d44a2e6
+		>>>>>>> 31e6dfbdf253c6c631668ee75f6897c85d44a2e6
 	}
 
 }

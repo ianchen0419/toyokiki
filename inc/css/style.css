@@ -1077,6 +1077,7 @@ article {
 		margin: 20px 0;
 	}
 
+<<<<<<< HEAD
 	.m-hide {
 		display: none;
 	}
@@ -1087,6 +1088,66 @@ article {
 
 	.thailand-image-area figure {
 	    width: 100%;
+=======
+	.contact-table,.contact-table tbody,.contact-table tr,.contact-table td,.contact-table th {
+		display: block;
+	}
+
+	.contact-table {
+		background-color: #eee;
+		padding: 30px 0;
+	}
+
+	.contact-table th {
+		box-sizing: border-box;
+		border-radius: 0;
+		width: 100%;
+		padding: 15px 40px;
+	}
+
+	.contact-table td {
+		width: 100%;
+		background: #eee;
+		box-sizing: border-box;
+		padding: 0 40px;
+		border-radius: 0;
+	}
+
+	.contact-table input {
+		width: 100%;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid #7bc1ca;
+		padding: 0;
+		background-color: #eee;
+	}
+
+	.radio-label {
+		display: block;
+		margin: 10px 0;
+	}
+
+	.radio-label span {
+	    vertical-align: middle;
+	}
+
+	.contact-table textarea {
+		border: 1px solid #7bc1ca;
+		background-color: #f7f7f7;
+		height: 350px;
+	}
+
+	.btn-box {
+		margin: 40px 0;
+	}
+
+	.btn-box input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none; 
+		padding: 6px 100px;
+>>>>>>> 31e6dfbdf253c6c631668ee75f6897c85d44a2e6
 	}
 
 }

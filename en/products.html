@@ -15,18 +15,33 @@
 	<header id="header"></header>
 	<nav id="menu"></nav>
 	<section id="visual">
-		<img src="../inc/img/products-1/products-1.png" id="img01" class="tab-img active show" alt="products" width="100%" />
-		<img src="../inc/img/products-2/products-2.png" id="img02" class="tab-img" alt="products" width="100%" />
-		<img src="../inc/img/products-3/products-3.png" id="img03" class="tab-img" alt="products" width="100%" />
-		<img src="../inc/img/advantages/advantages.png" id="img04" class="tab-img" alt="advantages" width="100%" />
+		<picture> 
+			<source media="(max-width: 480px)" srcset="../inc/img/products-1/products-1_mobile.png" /> 
+			<img src="../inc/img/products-1/products-1.png" id="img01" class="tab-img active show" alt="products" width="100%" /> 
+		</picture>
+		<picture> 
+			<source media="(max-width: 480px)" srcset="../inc/img/products-2/products-2_mobile.png" /> 
+			<img src="../inc/img/products-2/products-2.png" id="img02" class="tab-img" alt="products" width="100%" /> 
+		</picture>
+		<picture> 
+			<source media="(max-width: 480px)" srcset="../inc/img/products-3/products-3_mobile.png" /> 
+			<img src="../inc/img/products-3/products-3.png" id="img03" class="tab-img" alt="products" width="100%" /> 
+		</picture>
+		<picture> 
+			<source media="(max-width: 480px)" srcset="../inc/img/advantages/advantages_mobile.png" /> 
+			<img src="../inc/img/advantages/advantages.png" id="img04" class="tab-img" alt="advantages" width="100%" /> 
+		</picture>
 	</section>
+
+
 	<main id="contact">
+	
 		<div class="wrapper-size">
-			<div class="btn-area">
-				<button class="area-tab active" data-panel="area01" data-img="img01" onclick="tabPanels(this)">Product 1</button>
-				<button class="area-tab" data-panel="area02" data-img="img02" onclick="tabPanels(this)">Product 2</button>
-				<button class="area-tab" data-panel="area03" data-img="img03" onclick="tabPanels(this)">Product 3</button>
-				<button class="area-tab" data-panel="area04" data-img="img04" onclick="tabPanels(this)">Advantages</button>
+			<div class="btn-area mobile-stretch-tab" id="stretch">
+				<button class="area-tab active" data-panel="area01" data-img="img01" onclick="tabPanels(this);stretch.style.transform='translateX(0px)'">Product 1</button>
+				<button class="area-tab" data-panel="area02" data-img="img02" onclick="tabPanels(this);stretch.style.transform='translateX(-100px)'">Product 2</button>
+				<button class="area-tab" data-panel="area03" data-img="img03" onclick="tabPanels(this);stretch.style.transform='translateX(-200px)'">Product 3</button>
+				<button class="area-tab" data-panel="area04" data-img="img04" onclick="tabPanels(this);stretch.style.transform='translateX(-250px)'">Advantages</button>
 			</div>
 
 			<div id="area01" class="area-panel active show">

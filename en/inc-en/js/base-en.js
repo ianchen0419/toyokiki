@@ -150,3 +150,8 @@ function tabPanels(th){
 		
 }
 
+function openMobileMenu(){
+	document.body.classList.add('mobile-menu-opened');
+	mobileMenu.classList.add('opened');
+}
+

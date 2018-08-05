@@ -54,7 +54,7 @@ span {
 }
 
 #header .wrapper-size {
-	padding: 7px 20px;
+	padding: 10px 20px;
 }
 
 .logo-area {
@@ -70,6 +70,9 @@ span {
 .logo-area h1 {
 	display: inline-block;
 	text-align: center;
+	font-weight: bold;
+    font-size: 20pt;
+    color: #008db1;
 }
 .logo-area small {
 	color: #008db1;
@@ -686,8 +689,9 @@ article {
 		text-align: left;
 		margin: 0;
 		font-size: 11pt;
-    		width: 210px;
-    		color: #008db1;
+		width: 210px;
+		color: #008db1;
+		font-weight: bold;
 	}
 
 	.logo-area small,.logo-area span {
@@ -746,6 +750,7 @@ article {
 	.mobile-list {
 		padding: 15px 0;
 		margin-top: 0;
+		margin-bottom: 0;
 	}
 
 	.mobile-list > li {
@@ -753,9 +758,6 @@ article {
 		text-align: left;
 	}
 
-	.mobile-list li a span {
-		font-size: 9pt;
-	}
 
 	.mobile-list a {
 		width: 100%;
@@ -882,6 +884,7 @@ article {
 	.image-area {
 		height: calc(100vh - 50px);
 		background-size: auto;
+		background-image: url(../../../inc/img/top/top_mobile.png);
 	}
 
 	.title {
@@ -898,20 +901,18 @@ article {
 	}
 
 	.mobile-tel-area {
-		margin-left: 20px;
 		color: #008db1;
 		display: inline-block;
 		border: 2px solid;
 		border-radius: 6px;
 		padding: 15px 10px;
 		box-sizing: border-box;
-		width: 65%;
+		width: 75%;
 		text-align: center;
 	}
 
 	.mobile-tel-area a {
 		display: block;
-		font-size: 9pt;
 	}
 
 	.mobile-tel-area a span,.mobile-tel-area a i {
@@ -1199,6 +1200,14 @@ article {
 		border-right: 7px solid transparent;
 		border-left: 7px solid transparent;
 		border-top: 10px solid #008db1;
+	}
+
+	.tab-wrapper {
+		overflow: hidden;
+	}
+
+	.m-hide {
+		display: none;
 	}
 
 }

@@ -16,15 +16,18 @@
 	<nav id="menu"></nav>
 
 	<section id="visual">
-		<img src="../inc/img/about/about.png" alt="about" width="100%" />
+		<picture> 
+			<source media="(max-width: 480px)" srcset="../inc/img/about/about_mobile.png" /> 
+			<img src="../inc/img/about/about.png" alt="about" width="100%" /> 
+		</picture>
 		<h3 class="visual-title">Ask us anything about iron processing!</h3>
 	</section>
 
 	<main id="contact">
 		<div class="wrapper-size">
-			<div class="btn-area">
-				<button class="area-tab active" data-panel="area01" onclick="tabPanels(this)">About Us</button>
-				<button class="area-tab" data-panel="area02" onclick="tabPanels(this)">Corporate Philosophy</button>
+			<div class="btn-area mobile-stretch-tab" id="stretch">
+				<button class="area-tab active" data-panel="area01" onclick="tabPanels(this);stretch.style.transform='translateX(0px)'">About Us</button>
+				<button class="area-tab" data-panel="area02" onclick="tabPanels(this);stretch.style.transform='translateX(-50px)'">Corporate Philosophy</button>
 			</div>
 
 			<div id="area01" class="area-panel active show">

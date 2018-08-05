@@ -84,8 +84,11 @@ function menuDropdown(){
 }
 
 
-if(nowPath=='about.html'){
-	function initMap() {
+function initMap() {
+
+	if(nowPath=='about.html'){
+
+		
 		//tokyo office
 		var tokyo = {lat: 35.5558912, lng: 139.7267339};
 		var map = new google.maps.Map(document.getElementById('officeMap'), {
@@ -107,19 +110,18 @@ if(nowPath=='about.html'){
 	    	position: yaita,
 	    	map: map
 	    });
-	}
-}else if(nowPath=='thailand.html'){
-	function initMap() {
+	}else if(nowPath=='thailand.html'){
 		//thailand factory
-	    var thailand = {lat: 13.5689462, lng: 100.6816627};
-	    var map = new google.maps.Map(document.getElementById('thailandMap'), {
-	    	zoom: 12,
-	    	center: thailand
-	    });
-	    var marker = new google.maps.Marker({
-	    	position: thailand,
-	    	map: map
-	    });
+		var thailand = {lat: 13.5689462, lng: 100.6816627};
+		var map = new google.maps.Map(document.getElementById('thailandMap'), {
+			zoom: 12,
+			center: thailand
+		});
+		var marker = new google.maps.Marker({
+			position: thailand,
+			map: map
+		});
+
 	}
 
 }

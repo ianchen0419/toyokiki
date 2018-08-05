@@ -69,31 +69,31 @@ function menuHighlight(){
 // menu dropdown
 function menuDropdown(){
 
-		//mobile menu dropdown
-		document.body.addEventListener('touchstart', function(event){
+	//mobile menu dropdown
+	document.body.addEventListener('touchstart', function(event){
 
-			if(event.target.tagName=='BODY' && mobileMenu.classList.contains('opened')){
-				document.body.classList.remove('mobile-menu-opened');
-				mobileMenu.classList.remove('opened');
-			}
-		})
-
-		const mobileMenuChildHeads=document.querySelectorAll('.mobile-child-head');
-
-		for(i=0;i<mobileMenuChildHeads.length;i++){
-			mobileMenuChildHeads[i].addEventListener('click', function(){
-				this.classList.toggle('active');
-				this.nextElementSibling.classList.toggle('opened');
-			})
+		if(event.target.tagName=='BODY' && mobileMenu.classList.contains('opened')){
+			document.body.classList.remove('mobile-menu-opened');
+			mobileMenu.classList.remove('opened');
 		}
+	})
 
+	const mobileMenuChildHeads=document.querySelectorAll('.mobile-child-head');
+
+	for(i=0;i<mobileMenuChildHeads.length;i++){
+		mobileMenuChildHeads[i].addEventListener('click', function(){
+			this.classList.toggle('active');
+			this.nextElementSibling.classList.toggle('opened');
+		})
 	}
 
-	function initMap() {
+}
 
-		if(nowPath=='about.html'){
+function initMap() {
 
-			
+	if(nowPath=='about.html'){
+
+		
 		//tokyo office
 		var tokyo = {lat: 35.5558912, lng: 139.7267339};
 		var map = new google.maps.Map(document.getElementById('officeMap'), {

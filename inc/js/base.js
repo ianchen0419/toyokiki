@@ -95,7 +95,7 @@ function initMap() {
 
 		
 		//tokyo office
-		var tokyo = {lat: 35.5558912, lng: 139.7267339};
+		var tokyo = {lat: 35.556162, lng: 139.728890};
 		var map = new google.maps.Map(document.getElementById('officeMap'), {
 			zoom: 15,
 			center: tokyo

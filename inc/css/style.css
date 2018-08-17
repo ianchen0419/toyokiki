@@ -626,6 +626,17 @@ article {
 	outline: none;
 	transition-duration: 0.5s;
 }
+
+#thanks {
+	text-align: center;
+    	margin-top: 40px;
+}
+
+.btn-box input[disabled] {
+	opacity: 0.3;
+	cursor: default;
+}
+
 .radio-label {
 	margin: 0px 5px;
 	letter-spacing: 0;

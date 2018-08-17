@@ -27,7 +27,7 @@
 
 			<article>本社TEL：03-3742-4831 / 矢板工場TEL：0287-44-2155<br>info@toyokiki.co.jp<br>東陽機器工業株式会社へのお問い合わせは、下記フォームよりお気軽にご連絡ください。</article>
 
-			<form action="" method="post">
+			<form action="" onsubmit="sendValue(this, event)" method="POST">
 				<table class="contact-table">
 					<tbody>
 						<tr>
@@ -75,7 +75,7 @@
 								<span class="badge">必須</span>
 							</th>
 							<td>
-								<input type="email" name="your_mail(confirm)" required="1" />
+								<input type="email" name="your_mail_confirm" required="1" />
 							</td>
 						</tr>
 						<tr>
@@ -118,6 +118,8 @@
 				<div class="btn-box">
 					<input type="submit" name="your_submit" value="送信">
 				</div>
+				<div id="thanks" hidden>お問い合わせありがとうございます<br>追って担当者よりご連絡します。</div>
+				<div id="fail" hidden>送信失敗しました</div>
 			</form>
 
 		</div>
@@ -126,4 +128,90 @@
 	<footer id="footer"></footer>
 </body>
 <script src="inc/js/base.js"></script>
+<script>
+	function sendValue(th, e){
+		e.preventDefault();
+
+		var tableContent=document.querySelectorAll('td');
+		var myFormElem=document.forms[0].elements;
+
+		var your_company=myFormElem[0].value;
+		var your_division=myFormElem[1].value;
+		var your_name=myFormElem[2].value;
+		var your_furigana=myFormElem[3].value;
+		var your_mail=myFormElem[4].value;
+		var your_mail_confirm=myFormElem[5].value;
+		var your_phone=myFormElem[6].value;
+		var your_message=myFormElem[10].value;
+		var your_submit=myFormElem[11];
+		var your_type='';
+
+		if(myFormElem[7].checked==true){
+			your_type='ご相談';
+		}else if(myFormElem[8].checked==true){
+			your_type='採用について';
+		}else if(myFormElem[9].checked==true){
+			your_type='その他';
+		}
+
+
+		// var request = getHttpRequest();
+	 //       request.onreadystatechange=function() {
+	 //             if (request.readyState == 4 && request.status == 200) {
+	 //                   console.log("Response Received");
+	 //             }
+	 //       }
+	 //       request.open("POST","post-handler.php",true);
+	 //       request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	 //       request.send("action=dosomething");
+
+		var mailXhr=new XMLHttpRequest();
+
+		mailXhr.open('POST', 'mail.php', true);
+		mailXhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+		mailXhr.onreadystatechange=function(){
+			if(mailXhr.readyState==4 && mailXhr.status==200){
+
+				console.log(mailXhr.responseText);
+				
+
+				if(mailXhr.responseText=='success'){
+					tableContent[0].textContent=your_company;
+					tableContent[1].textContent=your_division;
+					tableContent[2].textContent=your_name;
+					tableContent[3].textContent=your_furigana;
+					tableContent[4].textContent=your_mail;
+					tableContent[5].textContent=your_mail_confirm;
+					tableContent[6].textContent=your_phone;
+					tableContent[7].textContent=your_type;
+					tableContent[8].innerHTML=your_message.replace(/\n/g, "<br />");;
+
+					your_submit.hidden=true;
+					thanks.hidden=false;
+
+				}else if(mailXhr.responseText=='fail'){
+					fail.hidden=false;
+				}
+
+			}
+		};
+
+		mailXhr.send(
+			"your_company="+your_company+
+			"&your_division="+your_division+
+			"&your_name="+your_name+
+			"&your_furigana="+your_furigana+
+			"&your_mail="+your_mail+
+			"&your_mail_confirm="+your_mail_confirm+
+			"&your_phone="+your_phone+
+			"&your_type="+your_type+
+			"&your_message="+your_message
+			
+			);
+
+
+		
+	}
+</script>
 </html>

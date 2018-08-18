@@ -893,7 +893,7 @@ article {
 	.image-area {
 		height: calc(100vh - 50px);
 		background-size: auto;
-		background-image: url(../../../inc/img/top/top_mobile.png);
+		background-image: url(../img/top/top_mobile.png);
 	}
 
 	.title {

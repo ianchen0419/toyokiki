@@ -203,13 +203,10 @@ i {
 }
 
 .image-area {
-	background-image: url(../img/top/top_mobile.png);
+	background-image: url(../img/top/top.png);
 	width: 100%;
 	height: calc(100vh - 120px);
 	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
-	background-position-x: -75px; 
 }
 
 .text-area {
@@ -894,6 +891,9 @@ article {
 		height: calc(100vh - 50px);
 		background-size: auto;
 		background-image: url(../img/top/top_mobile.png);
+		background-attachment: fixed;
+		background-position: center center;
+		background-position-x: -75px;
 	}
 
 	.title {

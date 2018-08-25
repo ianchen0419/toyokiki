@@ -886,7 +886,8 @@ article {
 		background-image: url(../../../inc/img/top/top_mobile.png);
 		background-position-x: 0px;
 		background-position-y: 40px;
-
+		-webkit-background-size: 140%;
+		background-size: 140%;
 	}
 
 	.title {
